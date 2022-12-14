@@ -44,8 +44,7 @@ void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 		left = left->left;
 	}
 	func(left->n);
-	if (left->parent->right)
-		left = left->parent->right;
+	left = left->parent->right;
 	while (left->right)
 	{
 		func(left->n);
