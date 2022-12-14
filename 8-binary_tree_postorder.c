@@ -20,7 +20,7 @@ void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 	{
 		func(tree->n);
 		return;
-	} 
+	}
 	while (left->left)
 	{
 		left = left->left;
