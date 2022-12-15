@@ -11,45 +11,11 @@
  */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
-	const binary_tree_t *left;
+	if (tree == NULL || func == NULL)
+		return;
+	func(tree->n);
+	binary_tree_preorder(tree->left, func);
+	binary_tree_preorder(tree->right, func);
 
-	if ((tree == NULL) || (func == NULL))
-		return;
-	left = tree;
-	func(left->n);
-	if (tree->left == NULL && tree->right == NULL)
-		return;
-	left = left->left;
-	while (left->left)
-	{
-		func(left->n);
-		left = left->left;
-	}
-	func(left->n);
-	if (left->right)
-		func(left->right->n);
-	left = left->parent;
-	while (left->right)
-	{
-		func(left->right->n);
-		if (left->parent == NULL)
-			break;
-		left = left->parent;
-	}
-	if (left->right)
-		left = left->right->left;
-	while (left->left)
-	{
-		func(left->n);
-		left = left->left;
-	}
-	func(left->n);
-	left = left->parent->right;
-	while (left->right)
-	{
-		func(left->n);
-		left = left->right;
-	}
-	func(left->n);
 }
 
