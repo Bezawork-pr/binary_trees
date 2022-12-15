@@ -1,4 +1,13 @@
 #include "binary_trees.h"
+/**
+ * max - find max
+ *
+ * @num1: num
+ *
+ * @num2: num
+ *
+ * Return: max
+ */
 size_t max(size_t num1, size_t num2)
 {
 	if (num1 >= num2)
@@ -23,5 +32,5 @@ size_t binary_tree_height(const binary_tree_t *tree)
 		return (0);
 	leftheight = binary_tree_height(tree->left);
 	rightheight = binary_tree_height(tree->right);
-	return max(leftheight, rightheight) + 1;
+	return (max(leftheight, rightheight) + 1);
 }
