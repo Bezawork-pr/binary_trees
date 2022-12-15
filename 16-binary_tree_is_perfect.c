@@ -1,5 +1,21 @@
-#include <math.h>
 #include "binary_trees.h"
+/**
+ * pow_ - find the power
+ *
+ * @x: base
+ *
+ * @y: power
+ *
+ * Return: power
+ */
+int pow_(int x, int y)
+{
+	int power = 1, i;
+
+	for (i = 1; i <= y; ++i)
+		power = power * x;
+	return (power);
+}
 /**
  * max - find max
  *
@@ -63,7 +79,7 @@ size_t leaves_(const binary_tree_t *tree)
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	int height = height_(tree);
-	int perfectleaves = pow(2, height);
+	int perfectleaves = pow_(2, height);
 	int leaves = leaves_(tree);
 
 	if (tree == NULL)
