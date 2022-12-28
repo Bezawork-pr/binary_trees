@@ -40,3 +40,84 @@ This project aims at mastering Binary trees. Different topics related to binary 
   .--(054)       .--(402)
 (012)          (128)    
 </pre>
+### 2. Insert right
+[2-binary_tree_insert_right.c](https://github.com/Bezawork-pr/binary_trees/blob/master/2-binary_tree_insert_right.c): A function that inserts a node as the right-child of another node
+<pre>
+  .--(098)--.
+(012)     (402)
+
+  .-------(098)--.
+(012)--.       (128)--.
+     (054)          (402)
+</pre>
+### 3. Delete
+[3-binary_tree_delete.c](https://github.com/Bezawork-pr/binary_trees/blob/master/3-binary_tree_delete.c): A function that deletes an entire binary tree
+<pre>
+==13264== Memcheck, a memory error detector
+==13264== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==13264== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==13264== Command: ./3-del
+==13264== 
+  .-------(098)--.
+(012)--.       (128)--.
+     (054)          (402)
+==13264== 
+==13264== HEAP SUMMARY:
+==13264==     in use at exit: 0 bytes in 0 blocks
+==13264==   total heap usage: 9 allocs, 9 frees, 949 bytes allocated
+==13264== 
+==13264== All heap blocks were freed -- no leaks are possible
+==13264== 
+==13264== For counts of detected and suppressed errors, rerun with: -v
+==13264== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+</pre>
+### 4. Is leaf
+* [4-binary_tree_is_leaf.c](https://github.com/Bezawork-pr/binary_trees/blob/master/4-binary_tree_is_leaf.c):  A function that checks if a node is a leaf
+<pre>
+ .-------(098)--.
+(012)--.       (128)--.
+     (054)          (402)
+Is 98 a leaf: 0
+Is 128 a leaf: 0
+Is 402 a leaf: 1
+</pre>
+### 5. Is root
+* [5-binary_tree_is_root.c](https://github.com/Bezawork-pr/binary_trees/blob/master/5-binary_tree_is_root.c): A function that checks if a given node is a root
+<pre>
+  .-------(098)--.
+(012)--.       (128)--.
+     (054)          (402)
+Is 98 a root: 1
+Is 128 a root: 0
+Is 402 a root: 0
+</pre>
+### 6. Pre-order traversal
+* [6-binary_tree_preorder.c](https://github.com/Bezawork-pr/binary_trees/blob/master/6-binary_tree_preorder.c): A function that goes through a binary tree using pre-order traversal.
+<pre>
+      .-------(098)-------.
+  .--(012)--.         .--(402)--.
+(006)     (056)     (256)     (512)
+98
+12
+6
+56
+402
+256
+512
+</pre>
+### 7. In-order traversal
+* [7-binary_tree_inorder.c](https://github.com/Bezawork-pr/binary_trees/blob/master/7-binary_tree_inorder.c): A function that goes through a binary tree using in-order traversal.
+<pre>
+      .-------(098)-------.
+  .--(012)--.         .--(402)--.
+(006)     (056)     (256)     (512)
+6
+12
+56
+98
+256
+402
+512
+</pre>
+### 8. Post-order traversal
+* [8-binary_tree_postorder.c](https://github.com/Bezawork-pr/binary_trees/blob/master/8-binary_tree_postorder.c): A function that goes through a binary tree using post-order traversal
