@@ -44,3 +44,19 @@ This project aims at mastering Binary trees. Different topics related to binary 
 
 ### 8. Post-order traversal
 * [8-binary_tree_postorder.c](https://github.com/Bezawork-pr/binary_trees/blob/master/8-binary_tree_postorder.c): A function that goes through a binary tree using post-order traversal
+### 9. Height
+* [9-binary_tree_height.c](https://github.com/Bezawork-pr/binary_trees/blob/master/9-binary_tree_height.c): A function that measures the height of a binary tree
+### 10. Depth
+* [10-binary_tree_depth.c](https://github.com/Bezawork-pr/binary_trees/blob/master/10-binary_tree_depth.c): A function that measures the depth of a node in a binary tree
+### 11. Size
+* [11-binary_tree_size.c](https://github.com/Bezawork-pr/binary_trees/blob/master/11-binary_tree_size.c): A function that measures the size of a binary tree.
+### 12. Leaves
+* [12-binary_tree_leaves.c](https://github.com/Bezawork-pr/binary_trees/blob/master/12-binary_tree_leaves.c): A function that counts the leaves in a binary tree.
+### 13. Nodes
+* [13-binary_tree_nodes.c](https://github.com/Bezawork-pr/binary_trees/blob/master/13-binary_tree_nodes.c): A function that counts the nodes with at least 1 child in a binary tree
+### 14. Balance factor
+* [14-binary_tree_balance.c](https://github.com/Bezawork-pr/binary_trees/blob/master/14-binary_tree_balance.c): A function that measures the balance factor of a binary tree.
+### 15. Is full
+* [15-binary_tree_is_full.c](https://github.com/Bezawork-pr/binary_trees/blob/master/15-binary_tree_is_full.c): A function that checks if a binary tree is full
+### 16. Is perfect
+* [16-binary_tree_is_perfect.c]()
